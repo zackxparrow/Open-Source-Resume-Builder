@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+input, textarea, select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.add-btn {
+    background-color: #28a745;
+}
+
+.add-btn:hover {
+    background-color: #218838;
+}
+
+.preview {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    background: #fafafa;
+    min-height: 400px;
+}
+
+/* Template Styles */
+.modern {
+    font-family: 'Helvetica', sans-serif;
+    color: #333;
+}
+
+.modern h1 {
+    color: #007bff;
+}
+
+.classic {
+    font-family: 'Times New Roman', serif;
+    color: #000;
+}
+
+.minimalist {
+    font-family: 'Arial', sans-serif;
+    color: #555;
+    line-height: 1.5;
+}

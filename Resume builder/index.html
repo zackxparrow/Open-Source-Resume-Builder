@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        
+        <!-- Template Selection -->
+        <div class="section">
+            <h2>Select Template</h2>
+            <select id="template-select">
+                <option value="modern">Modern</option>
+                <option value="classic">Classic</option>
+                <option value="minimalist">Minimalist</option>
+            </select>
+        </div>
+        
+        <!-- Customization Options -->
+        <div class="section">
+            <h2>Customize Sections</h2>
+            <label><input type="checkbox" id="include-personal" checked> Personal Info</label>
+            <label><input type="checkbox" id="include-education" checked> Education</label>
+            <label><input type="checkbox" id="include-experience" checked> Experience</label>
+            <label><input type="checkbox" id="include-skills" checked> Skills</label>
+            <label><input type="checkbox" id="include-projects"> Projects</label>
+        </div>
+        
+        <!-- Input Forms -->
+        <div class="section">
+            <h2>Enter Your Details</h2>
+            
+            <div id="personal-section">
+                <h3>Personal Information</h3>
+                <input type="text" id="name" placeholder="Full Name">
+                <input type="email" id="email" placeholder="Email">
+                <input type="tel" id="phone" placeholder="Phone">
+                <input type="text" id="address" placeholder="Address">
+                <textarea id="summary" placeholder="Professional Summary"></textarea>
+            </div>
+            
+            <div id="education-section">
+                <h3>Education</h3>
+                <div class="education-entry">
+                    <input type="text" placeholder="Degree">
+                    <input type="text" placeholder="Institution">
+                    <input type="text" placeholder="Year">
+                    <button class="add-btn" onclick="addEducation()">Add Another</button>
+                </div>
+            </div>
+            
+            <div id="experience-section">
+                <h3>Work Experience</h3>
+                <div class="experience-entry">
+                    <input type="text" placeholder="Job Title">
+                    <input type="text" placeholder="Company">
+                    <input type="text" placeholder="Duration">
+                    <textarea placeholder="Description"></textarea>
+                    <button class="add-btn" onclick="addExperience()">Add Another</button>
+                </div>
+            </div>
+            
+            <div id="skills-section">
+                <h3>Skills</h3>
+                <input type="text" id="skills" placeholder="Skills (comma-separated)">
+            </div>
+            
+            <div id="projects-section">
+                <h3>Projects</h3>
+                <div class="project-entry">
+                    <input type="text" placeholder="Project Name">
+                    <textarea placeholder="Description"></textarea>
+                    <button class="add-btn" onclick="addProject()">Add Another</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Buttons -->
+        <div class="section">
+            <button id="preview-btn">Preview Resume</button>
+            <button id="save-btn">Save Draft</button>
+            <button id="load-btn">Load Draft</button>
+            <button id="download-btn">Download PDF</button>
+        </div>
+        
+        <!-- Preview Area -->
+        <div id="preview" class="preview"></div>
+    </div>
+    
+    <script src="lib/jspdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
