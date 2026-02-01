@@ -6,6 +6,7 @@
 A simple and interactive Resume Builder web application that helps users create professional resumes with multiple templates, live preview, and PDF download functionality.
 
 🚀 Features
+-----
 
 Multiple resume templates:
 
@@ -54,8 +55,10 @@ CSS3 – Styling and layout
 JavaScript (Vanilla JS) – Dynamic functionality and logic
 
 jsPDF Library – PDF generation
+
 --------------------------------------------------------------------
 📌 Future Enhancements
+--
 
 Backend integration for user authentication
 
