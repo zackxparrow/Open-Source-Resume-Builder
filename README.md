@@ -54,3 +54,15 @@ CSS3 – Styling and layout
 JavaScript (Vanilla JS) – Dynamic functionality and logic
 
 jsPDF Library – PDF generation
+--------------------------------------------------------------------
+📌 Future Enhancements
+
+Backend integration for user authentication
+
+More professional resume templates
+
+Auto-formatting and validation
+
+Export resume in DOCX format
+
+Cloud-based resume storage
